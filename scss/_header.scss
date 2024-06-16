@@ -1,0 +1,103 @@
+.header {
+
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+   color: #fff;
+
+   &__container {
+      display: flex;
+      padding: 15px 5px;
+   }
+
+   &__shopping {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 1 30%;
+      span{
+         width: 100%;
+         text-align: center;
+         padding: 15px 0px;
+         background: $var-color;
+         border-radius: 10px;
+         @media(hover: hover){
+            &:hover{
+            transition: all .3s ease 0s;
+            background: $hoverVar-color;
+         }
+         }
+         @media(hover: none){
+            &:active{
+            transition: all .3s ease 0s;
+            background: $hoverVar-color;
+            }
+         }
+         cursor: pointer;
+         span{
+            background: none;
+         }
+      }
+   }
+
+   &__count {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      flex: 0 1 40%;
+      flex-shrink: 0;
+   }
+
+   &__rebirth {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 1 30%;
+      button{
+         width: 100%;
+         background: $var-color;
+         padding: 15px 0px;
+         border-radius: 10px;
+         transition: all .3s ease 0s;
+         @media(hover: hover){
+            &:hover{
+            transition: all .3s ease 0s;
+            background: $hoverVar-color;
+         }
+         }
+         @media(hover: none){
+            &:active{
+            transition: all .3s ease 0s;
+            background: $hoverVar-color;
+            }
+         }
+      }
+   }
+}
+
+.shopping {
+
+   &__multiplier {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex: 0 1 100%;
+      gap: 15px;
+   }
+
+   &__multiplierX {
+   }
+}
+
+.header-count {
+
+   &__count {
+   }
+
+   &__profit {
+   }
+}
+
